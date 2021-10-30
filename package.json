@@ -1,0 +1,29 @@
+{
+  "name": "genshinstats",
+  "version": "1.0.0",
+  "description": "Simple API wrapper for Genshin Impact",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "yarn clear && tsc",
+    "clear": "rimraf ./lib ./dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wolfkid200444/genshinstats.git"
+  },
+  "keywords": [
+    "api",
+    "genshin-impact",
+    "mihoyo"
+  ],
+  "author": "Wolfkid200444",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Wolfkid200444/genshinstats/issues"
+  },
+  "homepage": "https://github.com/Wolfkid200444/genshinstats#readme",
+  "dependencies": {
+    "rimraf": "^3.0.2"
+  }
+}
