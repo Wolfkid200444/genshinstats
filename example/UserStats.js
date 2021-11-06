@@ -1,4 +1,4 @@
 const { GenshinStats } = require('../dist/index');
-const app = new GenshinStats()
+const app = new GenshinStats({ cookie: 'sus' })
 
-console.log(app.getUserInfo('600482834'));
+console.log(app);

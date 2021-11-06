@@ -6,17 +6,20 @@ import {
     UserInfo
 } from './structure';
 
+interface Options {
+    cookie: string
+}
 
 export class GenshinStats {
-    server!: typeof getServer
-    headers!: typeof getHeaders    
-    request!: typeof request
-    DS!: typeof DS
-    cookie!: string
+    private server: typeof getServer
+    private headers: typeof getHeaders    
+    private request: typeof request
+    private DS: typeof DS
+    private cookie: string
 
 
-    constructor() {
-        this.cookie = ''
+    constructor(options: Options) {
+        this.cookie = options.cookie
         this.server = getServer
         this.headers = getHeaders
         this.request = request
