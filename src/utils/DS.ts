@@ -1,8 +1,6 @@
 import crypto from 'crypto';
-
-
     
-export function DS(this: any, { body, query}: any): string {
+export function DS(this: any, { body, query }: any): string {
     return getOsDS('6s25p5ox5y14umn1p61aqyyvbvvl3lrt')
     function getOsDS(salt: string) {
         const time = Math.floor(Date.now() / 1000)
